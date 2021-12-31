@@ -30,9 +30,9 @@ def ProgressBar(Segments = None, SleepTime = None, ArgumentsCanBeLeftBlankForPro
             print(i, end = '')
         
         if count == Segments:
-            break
             print('')
-        print('')
+            break
+            
         sleep(SleepTime)
         bar[count] = '▰'
         count += 1
