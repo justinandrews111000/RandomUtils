@@ -4,6 +4,8 @@ Created on Dec 31, 2021
 @author: justi
 '''
 
+#This is a progress bar that is based off of the number of segments and how much time is inbetween the filling of the segments. 
+#I made this to have visual output to make sure my program was still running and not hanging.
 #You can either leave the arguments blank and it will prompt you for the number of segments/SleepTime, or you can directly input them to bypass the prompt.
 
 from time import sleep
