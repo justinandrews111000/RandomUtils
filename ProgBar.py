@@ -3,12 +3,15 @@ Created on Dec 31, 2021
 
 @author: justi
 '''
+
+#You can either leave the arguments blank and it will prompt you for the number of segments/SleepTime, or you can directly input them to bypass the prompt.
+
 from time import sleep
 
-def ProgressBar(increment = None, SleepTime = None, ArgumentsCanBeLeftBlankForPrompts = None):
+def ProgressBar(Segments = None, SleepTime = None, ArgumentsCanBeLeftBlankForPrompts = None):
     
-    if increment == None:
-        increment = int(input('Enter How long you want your progress bar: '))
+    if Segments == None:
+        Segments = int(input('Enter How long you want your progress bar: '))
     if SleepTime == None:
         SleepTime = float(input('How long in seconds between each bar progress: '))
     
@@ -17,16 +20,16 @@ def ProgressBar(increment = None, SleepTime = None, ArgumentsCanBeLeftBlankForPr
     
     bar = []
     
-    while x != increment:
+    while x != Segments:
         bar.append('▱')
         x += 1
     
     count = 0
-    while count != increment + 1:
+    while count != Segments + 1:
         for i in bar:
             print(i, end = '')
         
-        if count == increment:
+        if count == Segments:
             break
             print('')
         print('')
