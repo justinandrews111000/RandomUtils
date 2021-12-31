@@ -30,6 +30,7 @@ def ProgressBar(Segments = None, SleepTime = None, ArgumentsCanBeLeftBlankForPro
     while count != Segments + 1:
         for i in bar:
             print(i, end = '')
+            print('')
         
         if count == Segments:
             print('')
